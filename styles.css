@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    margin: 0px;
+    overflow: hidden; /* Hide scrollbars */
+}
+button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.boid {
+    border-bottom: 10px solid green;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+}
+.fireball {
+    border-radius: 50%;
+    position: absolute;
+}
+.firework {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px;
+    position: absolute;
+}
+.raindrop {
+    background-color: cyan;
+    position: absolute;
+}
+.simulationButton {
+    opacity: inherit;
+    outline: none;
+    width: 100%;
+}
+.simulationButton:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.snowflake {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+.splash {
+    background-color: cyan;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#mainContainer {
+    height: 100vh;
+    width: 100vw;
+}
+#particleContainer {
+    background-color: black;
+    height: 100%;
+    flex-grow: 1;
+}
+#sideBar {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    height: 100%;
+    opacity: .6;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}

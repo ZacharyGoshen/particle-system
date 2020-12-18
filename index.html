@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Particle Simulator</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="sideBar">
+                <button id="snowfallButton" class="simulationButton">
+                    <h1>Snowfall</h1>
+                </button>
+                <button id="downpourButton" class="simulationButton">
+                    <h1>Downpour</h1>
+                </button>
+                <button id="celebrationButton" class="simulationButton">
+                    <h1>Celebration</h1>
+                </button>
+                <button id="flockButton" class="simulationButton">
+                    <h1>Flock</h1>
+                </button>
+            </div>
+            <div id="particleContainer"></div>
+        </div>
+
+        <script src="./simulations/simulation.js"></script>
+        <script src="./simulations/snowfall.js"></script>
+        <script src="./simulations/downpour.js"></script>
+        <script src="./simulations/celebration.js"></script>
+        <script src="./simulations/flock.js"></script>
+        <script src="./particles/particle.js"></script>
+        <script src="./particles/snowflake.js"></script>
+        <script src="./particles/raindrop.js"></script>
+        <script src="./particles/splash.js"></script>
+        <script src="./particles/firework.js"></script>
+        <script src="./particles/fireball.js"></script>
+        <script src="./particles/boid.js"></script>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
